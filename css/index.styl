@@ -6,10 +6,10 @@ logo = #820200
 	font-family 'icomoon'
 	src url('fonts/icomoon.eot?-1bk1pt')
 	src url('fonts/icomoon.eot?#iefix-1bk1pt') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-1bk1pt') format('woff'),
 		url('fonts/icomoon.ttf?-1bk1pt') format('truetype'),
 		url('fonts/icomoon.svg?-1bk1pt#icomoon') format('svg')
-	font-weight normal
+	font-weight normal		url('fonts/icomoon.woff?-1bk1pt') format('woff'),
+
 	font-style normal
 /*General*/
 body
@@ -141,9 +141,8 @@ a
 
 /*Footer*/
 .Footer
-	background rgba(0, 153, 255, 0)
 	text-align center
-	color rgba(0,0,0,1)
+	color rgb(0,0,0)
 	padding 0.1em
 
 
@@ -184,6 +183,17 @@ a
 		border none
 		text-align center
 		border-radius 0.5em
+		border 1px solid white
+	input[type="text"]
+		background-image url('../img/user91.svg')
+		background-repeat no-repeat !important
+		background-size 15px !important
+		background-position 10px center !important
+	input[type="email"]
+		background-image url('../img/email20.svg')
+		background-repeat no-repeat !important
+		background-size 20px !important
+		background-position 10px center !important
 	textarea
 		resize none
 		border none
@@ -202,30 +212,3 @@ a
 	margin 0 auto
 	width 250px
 	position relative
-#Text
-	position absolute
-	margin 0
-	min-height 10px
-	width 15px
-	padding 0
-	float left
-	left 20px
-	top 7px
-	&:before
-		font-size 1.1em
-		font-family 'icomoon'
-		content '\e605'
-
-#Mail
-	position absolute
-	margin 0
-	min-height 10px
-	width 15px
-	padding 0
-	float left
-	left 20px
-	top 50px
-	&:before
-		font-size 1em
-		font-family 'icomoon'
-		content '\e600'
